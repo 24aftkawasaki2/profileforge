@@ -1,0 +1,25 @@
+{
+  "name": "ProfileForge",
+  "build": {
+    "dockerfile": "../Dockerfile",
+    "context": "..",
+    "target": "dev"
+  },
+  "remoteUser": "vscode",
+  "updateRemoteUserUID": true,
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker": {
+      "version": "latest"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "rust-lang.rust-analyzer",
+        "redhat.vscode-yaml",
+        "samuelcolvin.jinjahtml"
+      ]
+    }
+  },
+  "postCreateCommand": "git config --global commit.gpgsign true && git config --global tag.gpgsign true"
+}

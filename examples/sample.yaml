@@ -1,0 +1,10 @@
+name: |
+  八王子 太郎(ハチオウジ タロウ)
+  です
+title: プログラマー
+bio: |
+  YAMLから自己紹介画像を生成するためのサンプルです。
+  この内容は実在のプロフィールではありません。
+links:
+  - label: profileforge
+    url: https://github.com/24aftkawasaki2/profileforge
